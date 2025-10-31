@@ -1,6 +1,6 @@
 <html>
   <body>
-  Hello world!
+  Your favorite websites are:
   
 </body>
 <script>
@@ -9,8 +9,6 @@ const fragment = window.location.hash;
 
 // 2. Check if a fragment exists
 if (fragment) {
-    // The fragment includes the '#' prefix, e.g., "#SGVsbG8gV29ybGQh"
-    // We need to remove the '#' before decoding
     const base64EncodedString = fragment.substring(1);
 
     try {
