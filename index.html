@@ -1,0 +1,12 @@
+<html>
+  <body>
+  Hello world!
+  
+</body>
+<script>
+const currentUrl = new URL(window.location.href);
+const newDiv = document.createElement('div');
+newDiv.textContent = currentUrl.searchParams;
+document.body.appendChild(newDiv);
+</script>
+</html>
